@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post">
+    <label>Username <input type="text" name="name" value="{{username}}"></label>
+    <label>Password <input type="password" name="pass"></label>
+    <div class="error">{{error}}</div>
+    <input id="show-pass" class="checkbox-unmask" type="checkbox" />
+    <label for="show-pass">Show my password</label>
+    <input type="submit">
+    <a href="/signup">Sign up</a>
+</form>
+{% endblock %}

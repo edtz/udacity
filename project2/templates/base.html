@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+
+<body>
+    {% for type, content in messages %}
+       <p> {{ content }} </p>
+    {% endfor %}
+    {% block content %}
+    {% endblock %}
+    {{ thing }}
+</body>
+
+</html>

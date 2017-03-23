@@ -1,0 +1,103 @@
+body {
+    font-family: "Droid Sans", sans-serif;
+    max-width: 60em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    color: #02b3e4;
+    text-decoration-line: none;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    color: #2d3c49;
+    border-bottom: 0.2em solid #7d97ad;
+    margin-bottom: 2em;
+}
+
+.logo {
+    height: 2em;
+}
+
+.header-text {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.header-title {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.page-title {
+    color: #7d97ad;
+    font-weight: lighter;
+    padding: 0 0.4em;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.project-image {
+    flex: 1 1 0%;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6em;
+}
+
+.project-description {
+    text-align: justify;
+    margin: 0 0.6em 1.5em;
+}
+
+@media (min-width: 34em) {
+    header {
+        padding: 0.6em 0.6em 1.4em;
+    }
+
+    .header-title {
+        font-size: 4em;
+    }
+
+    .logo {
+        height: 4em;
+    }
+
+    .page-title {
+        font-size: 2em;
+    }
+
+    article {
+        width: calc(100% / 2 - 0.4em);
+    }
+    
+    img {
+        margin: 0 0.6em;
+    }
+}
